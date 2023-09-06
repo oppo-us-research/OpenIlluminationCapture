@@ -1,0 +1,8 @@
+basedir = /nfs/STG/HumanAction/lab150/UCSD_other_data/NeuRIPS_2023_OpenIlumination/lighting_patterns/obj_01_car
+images = Lights
+calib_imgw = 2656
+normalize_camera_poses = True
+use_sam = True
+draw_sam = True
+multi_box = True
+output_name = output

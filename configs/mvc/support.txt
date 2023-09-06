@@ -1,0 +1,9 @@
+basedir = ~/Datasets/lightstage_dataset2/UCSD_OLAT2/UCSD_OLAT/23.06.02_13.46.20_obj-19-cylinder-olat
+images = Lights
+calib_imgw = 3000
+normalize_camera_poses = True
+use_sam = True
+draw_sam = True
+multi_box = False
+use_prior_box = False
+output_name = output_support

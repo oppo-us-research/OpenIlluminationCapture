@@ -1,0 +1,8 @@
+basedir = ~/Datasets/lightstage_dataset2/UCSD_OLAT2/UCSD_OLAT/23.06.02_13.49.29_obj-20-greenhead-olat
+images = Lights
+calib_imgw = 3000
+normalize_camera_poses = True
+use_sam = True
+draw_sam = True
+multi_box = True
+output_name = output
