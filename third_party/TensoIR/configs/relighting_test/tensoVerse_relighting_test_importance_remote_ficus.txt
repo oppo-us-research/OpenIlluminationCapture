@@ -1,0 +1,74 @@
+dataset_name = tensoIR_relighting_test
+datadir = /haian-fast-vol/DATA/our_rendered_data_relighting/ficus
+hdrdir = /haian-fast-vol/DATA/high_res_envmaps_1k
+expname =  lego_ds_1
+basedir = /home/haian/logs_info/tensorfactor/log_unknown_rotated_lights
+add_timestamp = 1
+downsample_train = 1
+downsample_test = 1
+geo_buffer_path = ./relighting/ficus_single
+n_iters = 150000
+batch_size = 1024
+lr_decay_iters = 150000
+
+N_voxel_init = 2097152 # 128**3
+N_voxel_final = 27000000 # 300**3
+
+upsamp_list = [10000, 20000, 30000, 40000]
+update_AlphaMask_list = [10000, 20000, 30000]
+N_vis = 5
+vis_every = 10000
+
+
+render_test = 1
+
+n_lamb_sigma = [16,16,16]
+n_lamb_sh = [48,48,48]
+model_name = TensorVMSplit
+
+
+shadingMode = MLP_Fea
+fea2denseAct = softplus
+
+view_pe = 2
+fea_pe = 2
+pos_pe = 2
+
+
+
+L1_weight_inital = 8e-5
+L1_weight_rest = 4e-5
+rm_weight_mask_thre = 1e-4
+
+
+# added by jha begin
+light_rotation = [000, 120, 240]
+# light_rotation = [000, 090, 180, 270]
+# light_rotation = [000]
+# light_rotation = [000, 045, 090, 135, 180, 225, 270, 315]
+
+light_sample_train = stratified_sample
+light_kind = sg
+numLgtSGs = 128
+train_visibility = False
+normals_kind = derived_plus_predicted
+
+normals_diff_weight = 0.0001
+normals_orientation_weight = 0.001
+batch_size_test = 4096
+
+light_name = sunset
+albedo_smoothness_loss_weight = 0.0001
+roughness_smoothness_loss_weight = 0.0002
+
+# added by jha end
+
+
+
+## please uncomment following configuration if hope to training on cp model
+#model_name = TensorCP
+#n_lamb_sigma = [96]
+#n_lamb_sh = [288]
+#N_voxel_final = 125000000 # 500**3
+#L1_weight_inital = 1e-5
+#L1_weight_rest = 1e-5
