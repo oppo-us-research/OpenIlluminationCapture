@@ -4,13 +4,7 @@ This repository contains code for pre-processing data captured the light stage, 
 This repository is used to process data in the paper "OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects", which introduces a real-world dataset containing over 108K images of 64 objects captured under 72 camera views and a large number of different illuminations. This dataset enables the quantitative evaluation of most inverse rendering and material decomposition methods for real objects. This dataset contains various everyday objects, including decoration sculptures, toys, foods, etc., and does not include human beings.
 
 ## Browse the content of the dataset
-To browse the content of the dataset in an interactive webpage, after cloning the repository to your local machine, open a python `http-server` under this repository folder
-```
-cd multiview_brdf_capture/annonymous2023neuripsdataset.github.io
-python -m http.server 8000
-```
-You can view the page through `http://localhost:8000`
-
+The dataset can be viewed at the [project page](https://oppo-us-research.github.io/OpenIllumination/).
 
 ## Requirements
 
