@@ -13,23 +13,23 @@ pip install tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg 
 ## Training under single illumination
 ```
 export PYTHONPATH=.
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/singleillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
+python train_tensoIR_simple_fix_SG.py --config configs/singleillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
 ```
 An example usage:
 ```
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/singleillum.txt  --expname 20230524-11_59_05_obj_1_car --datadir /linghao-fast/Datasets/lightstage_dataset/20230524-11_59_05_obj_1_car/output
+python train_tensoIR_simple_fix_SG.py --config configs/singleillum.txt  --expname 20230524-11_59_05_obj_1_car --datadir lightstage_dataset/20230524-11_59_05_obj_1_car/output
 ```
 
 ## Training under multi illumination
 ```
 export PYTHONPATH=.
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/multiillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
+python train_tensoIR_simple_fix_SG.py --config configs/multiillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
 ```
 
 ## Training under fixed lighting for relighting evaluation
 ```
 export PYTHONPATH=.
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/fixed_sg.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
+python train_tensoIR_simple_fix_SG.py --config configs/fixed_sg.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
 ```
 
 
@@ -37,16 +37,16 @@ python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-fina
 ### Single illumination
 ```
 export PYTHONPATH=.
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/singleillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$ --render_only 1 --render_test 1 --export_mesh 1
+python train_tensoIR_simple_fix_SG.py --config configs/singleillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$ --render_only 1 --render_test 1 --export_mesh 1
 ```
 
 ### Multi-illumination
 ```
 export PYTHONPATH=.
-python train_tensoIR_simple_fix_SG.py --config configs_lightstage_oppo/0524-final/multiillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$ --render_only 1 --render_test 1 --export_mesh 1
+python train_tensoIR_simple_fix_SG.py --config configs/multiillum.txt  --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$ --render_only 1 --render_test 1 --export_mesh 1
 ```
 
 ### Relighting evaluation under unseen lights
 ```
-python relight_sg_final.py --config configs_lightstage_oppo/0524-final/fixed_sg.txt --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
+python relight_sg_final.py --config configs/fixed_sg.txt --expname $EXP_NAME$ --datadir $PATH_TO_DATASET_OUTPUT_FOLDER$
 ```
