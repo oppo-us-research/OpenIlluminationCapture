@@ -1,0 +1,18 @@
+{
+    "ref_mesh": "/code/data/OpenIllumination/20230524-13_08_01_obj_2_egg",
+    "random_textures": true,
+    "iter": 5000,
+    "save_interval": 1000,
+    "texture_res": [ 512, 512 ],
+    "train_res": [1200, 800],
+    "batch": 2,
+    "learning_rate": [0.03, 0.0001],
+    "dmtet_grid" : 128,
+    "mesh_scale" : 0.8,
+    "validate" : true,
+    "n_samples" : 8,
+    "denoiser" : "bilateral",
+    "display": [{"latlong" : true}, {"bsdf" : "kd"}, {"bsdf" : "ks"}, {"bsdf" : "normal"}],
+    "background" : "white",
+    "out_dir": "openillum_obj_29_fabric_hat_mesh_scale_0.5"
+}
