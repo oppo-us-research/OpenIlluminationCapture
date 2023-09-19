@@ -1,5 +1,3 @@
-# OpenIllumination
-
 ![](./figs/openillum_teaser.gif)
 
 This repository contains code for pre-processing data captured the light stage, including camera parameter restoration, image undistortion, and object segmentation, and light calibration for object-centric task, as well as TensoIR pipeline on the captured dataset. 
