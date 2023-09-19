@@ -1,6 +1,6 @@
 # OpenIllumination
 
-<video autoplay src="./figs/openillum_teaser.mp4" controls="controls" style=""></video>
+![](./figs/openillum_teaser.gif)
 
 This repository contains code for pre-processing data captured the light stage, including camera parameter restoration, image undistortion, and object segmentation, and light calibration for object-centric task, as well as TensoIR pipeline on the captured dataset. 
 This repository is used to process data in the paper "OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects", which introduces a real-world dataset containing over 108K images of 64 objects captured under 72 camera views and a large number of different illuminations. This dataset enables the quantitative evaluation of most inverse rendering and material decomposition methods for real objects. This dataset contains various everyday objects, including decoration sculptures, toys, foods, etc., and does not include human beings.
