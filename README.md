@@ -1,5 +1,5 @@
 [//]: ![](./figs/openillum_teaser.gif)-
-# OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects
+# OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects (NeuRIPS 2023)
 
 ### [Project Page](https://oppo-us-research.github.io/OpenIllumination) | [Paper](https://arxiv.org/pdf/2309.07921)
 
