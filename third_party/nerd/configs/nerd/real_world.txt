@@ -1,0 +1,18 @@
+batch_size = 1024
+learning_rate = 1e-4
+lrate_decay = 250
+
+direct_rgb = True
+
+jitter_coords = True
+dataset_type = real_world
+
+epochs = 300
+steps_per_epoch = 1000
+
+weights_epoch = 10
+validation_epoch = 5
+testset_epoch = 300
+video_epoch = 300
+
+python train_nerd.py --config configs/nerd/real_data_single.txt --datadir ~/lightstage_dataset/20230524-13_08_01_obj_2_egg --basedir output/ --expname egg_test_single --gpu 0 --list_light_dir 013 --learning_rate 2e-5 

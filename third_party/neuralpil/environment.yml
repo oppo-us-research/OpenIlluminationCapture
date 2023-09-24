@@ -1,0 +1,30 @@
+# To run: conda env create -f environment.yml
+name: neuralpil
+channels:
+    - conda-forge
+    - nvidia
+dependencies:
+    - python = 3.9
+    - pip
+    - cudatoolkit=11.2
+    - cudnn
+    - numpy
+    - matplotlib
+    - imageio = 2.28.1
+    - imageio-ffmpeg = 0.4.8
+    - configargparse
+    - openexr-python
+    - pip:
+          - pyexr
+          - tensorflow == 2.6.2
+          - tensorflow-addons
+          - opencv-python
+          - scipy
+          - pytest
+          - tqdm
+          - flake8
+          - isort
+          - ffmpeg-python
+          - pylatex
+          - scikit-image
+          - pyquaternion

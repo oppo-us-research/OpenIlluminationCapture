@@ -1,0 +1,27 @@
+batch_size = 1024
+learning_rate = 1e-4
+lrate_decay = 400
+
+direct_rgb = False
+
+jitter_coords = True
+dataset_type = openillum_data
+single_env = True
+illumination_idx = ["013"]
+output_img_size = [1200, 800]
+
+epochs = 200
+steps_per_epoch = 1000
+
+weights_epoch = 10
+validation_epoch = 10
+testset_epoch = 200
+video_epoch = 400
+
+testskip = 1
+
+valskip = 1
+
+
+
+
