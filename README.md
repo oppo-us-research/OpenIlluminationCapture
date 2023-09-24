@@ -1,12 +1,16 @@
-# OpenIllumination
+[//]: ![](./figs/openillum_teaser.gif)-
+# OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects (NeuRIPS 2023)
 
-![](./figs/openillum_teaser.gif)
+### [Project Page](https://oppo-us-research.github.io/OpenIllumination) | [Paper](https://arxiv.org/pdf/2309.07921)
 
-This repository contains code for pre-processing data captured the light stage, including camera parameter restoration, image undistortion, and object segmentation, and light calibration for object-centric task, as well as TensoIR pipeline on the captured dataset. 
+
+This repository contains code for pre-processing data captured in the light stage, including camera parameter restoration, image undistortion, object segmentation, and light calibration for object-centric tasks. For comparison between your method and existing works, such as TensoIR, refer to [here](https://github.com/oppo-us-research/OpenIlluminationCapture/tree/main/third_party/TensoIR).
+
+
 This repository is used to process data in the paper "OpenIllumination: A Multi-Illumination Dataset for Inverse Rendering Evaluation on Real Objects", which introduces a real-world dataset containing over 108K images of 64 objects captured under 72 camera views and a large number of different illuminations. This dataset enables the quantitative evaluation of most inverse rendering and material decomposition methods for real objects. This dataset contains various everyday objects, including decoration sculptures, toys, foods, etc., and does not include human beings.
 
 ## Browse the content of the dataset
-The dataset can be viewed at the [project page](https://oppo-us-research.github.io/OpenIllumination/).
+The dataset can be viewed on the [project page](https://oppo-us-research.github.io/OpenIllumination/).
 
 ## Requirements
 
@@ -37,7 +41,7 @@ sh install.sh
 
 #### b) Install COLMAP
 
-Follow the instruction [here](https://colmap.github.io/install.html#build-from-source).
+Follow the instructions [here](https://colmap.github.io/install.html#build-from-source).
 
 #### c) Download the segmentation models
 
@@ -94,7 +98,7 @@ python tools/light_calib/light_calib.py
 
 ### 4. Data post-processing 
 
-Take images captured by DSLR as an exmple, run the following command to perform camera calibration, image undistortion, and segmentation. Note that this step requires a display if you use SAM to perform the segmentation.
+Take images captured by DSLR as an example, run the following command to perform camera calibration, image undistortion, and segmentation. Note that this step requires a display if you use SAM to perform the segmentation.
 
 ```bash
 python tools/data_process_multi_light.py -c configs/dslr/obj.txt
@@ -113,7 +117,7 @@ For the first 6 light patterns (001 to 006), we divide the 142 lights into 6 gro
 
 As for the remaining 7 light patterns (007 to 013), the lights are randomly illuminated, with the total number of chosen lights gradually increasing.
 
-Below is an image illustrates the 13 light patterns present in our dataset.
+Below is an image illustrating the 13 light patterns present in our dataset.
 
 The light patterns ground truth as provided in `REPO_ROOT/light_pos.npy`
 
