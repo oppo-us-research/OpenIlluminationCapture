@@ -14,7 +14,7 @@ The dataset can be viewed on the [project page](https://oppo-us-research.github.
 
 ## Requirements
 
-- Ubuntu 18.04+ **with a display for label segmentation**
+- Ubuntu 18.04+ **with a display for annotating segmentation masks**
 - Python 3.7+
 - Nvidia GPU
 
